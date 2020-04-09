@@ -13,11 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.example.android.background.sync;
 
-// TODO (9) Create WaterReminderIntentService and extend it from IntentService
+import android.app.IntentService;
+import android.content.Intent;
 
-//  TODO (10) Create a default constructor that calls super with the name of this class
+import androidx.annotation.Nullable;
 
-//  TODO (11) Override onHandleIntent
-//      TODO (12) Get the action from the Intent that started this Service
-//      TODO (13) Call ReminderTasks.executeTask and pass in the action to be performed
+// _TODO (9) Create WaterReminderIntentService and extend it from IntentService
+public class WaterReminderIntentService extends IntentService {
+
+    //  _TODO (10) Create a default constructor that calls super with the name of this class
+    public WaterReminderIntentService() { super("WaterReminderIntentService"); }
+
+
+    //  _TODO (11) Override onHandleIntent
+    @Override
+    protected void onHandleIntent(@Nullable Intent intent) {
+//      _TODO (12) Get the action from the Intent that started this Service
+        String action = intent.getAction();
+//      _TODO (13) Call ReminderTasks.executeTask and pass in the action to be performed
+        ReminderTasks .executeTask(this, action);
+    }
+}
+
+
+
