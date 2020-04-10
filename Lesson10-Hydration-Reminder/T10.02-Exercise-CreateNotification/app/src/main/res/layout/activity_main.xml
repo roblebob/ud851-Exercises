@@ -30,7 +30,8 @@
             android:onClick="incrementWater"
             android:padding="8dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_local_drink_grey_120px" />
+            android:src="@drawable/ic_local_drink_grey_120px"
+            android:visibility="visible"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,5 +86,11 @@
             android:text="@string/default_charge_notification_count" />
 
     </RelativeLayout>
-    <!-- TODO (14) Add a button for testing your notification with an onClick method called testNotification -->
+    <!-- _TODO (14) Add a button for testing your notification with an onClick method called testNotification -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="testNotification"
+        android:text="Test Notification"/>
 </LinearLayout>
