@@ -28,7 +28,7 @@ public class ReminderUtilities {
     // _TODO (15) Create three constants and one variable:
     //  - REMINDER_INTERVAL_SECONDS should be an integer constant storing the number of seconds in 15 minutes
     //private static final int REMINDER_INTERVAL_MINUTES = 1;
-    private static final int REMINDER_INTERVAL_SECONDS = 20; //(int) (TimeUnit.MINUTES.toSeconds(REMINDER_INTERVAL_MINUTES));
+    private static final int REMINDER_INTERVAL_SECONDS = 15; //(int) (TimeUnit.MINUTES.toSeconds(REMINDER_INTERVAL_MINUTES));
     //  - SYNC_FLEXTIME_SECONDS should also be an integer constant storing the number of seconds in 15 minutes
     private static final int SYNC_FLEXTIME_SECONDS = REMINDER_INTERVAL_SECONDS;
     //  - REMINDER_JOB_TAG should be a String constant, storing something like "hydration_reminder_tag"
